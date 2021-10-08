@@ -1,0 +1,22 @@
+Criando Repositório remoto e local com GitHub
+
+1. No site github crie um novo repositório => Publico
+2. Na pasta d:\Users\pquina\github crie uma pasta 
+	mkdir Publico
+3. Entre na pasta 
+	cd Publico
+4. Inicialize o repositório local <Publico> . Será criada a pasta .git
+	git init
+5. Adicione arquivos ou pastas para sincronizar com o repositório
+	git add <arquivo>
+	git add <pasta>
+6. Adicione um comentário para a atualização 
+	git commit -m "comentário"
+7. Indique que esse é o "branch main"
+	git branch -M main
+8. Vincule o repositório local com o repositório remoto
+        git remote add origin https://github.com/pquina/Publico.git
+9. Sincronize os arquivos com o repositório remoto 
+	git push -u origin main
+10. Sempre que incluir arquivos, seguir os passos 5 a 9 , com excessão do passo 8. 	
+
