@@ -18,5 +18,7 @@ Criando Repositório remoto e local com GitHub. Atualizado em 08/10/2021 20:30
         git remote add origin https://github.com/pquina/Publico.git
 9. Sincronize os arquivos com o repositório remoto 
 	git push -u origin main
-10. Sempre que incluir arquivos, seguir os passos 5 a 9 , com excessão do passo 8. 	
+10. Sempre que incluir arquivos/pastas , seguir os passos 5 a 9 , com excessão do passo 8. 	
+11. Para atualizar o repositório local 
+	git pull
 
