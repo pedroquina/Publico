@@ -32,7 +32,13 @@ REMOVER PASTAS DO GIT MAS MANTER NO FILE SYSTEM
 	git commit -m "Removed folder from repository"
 	git push origin main 
 
+FAZER PULL E PUSH
+	git checkout <sua-branch> && git pull origin <sua-branch>
+
 Solução de erros :
 
 fatal: refusing to merge unrelated histories
 	git pull origin master --allow-unrelated-histories
+error: failed to push some refs to
+	git checkout main  
+	git pull origin main
