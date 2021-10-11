@@ -7,3 +7,6 @@
 </ul>
 
 <p>&nbsp; &nbsp;</p>
+
+
+<a title="Contato" href="mailto:pquina68" target="_blank">Contato : pquina68@gmail.com</a>
