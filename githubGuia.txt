@@ -22,6 +22,12 @@ Criando Repositório remoto e local com GitHub. Atualizado em 08/10/2021 20:30
 11. Para atualizar o repositório local 
 	git pull
 
+RENOMEAR ARQUIVOS E PASTAS
+        git mv <arquivoOld/pastaOld> <arquivoNew/pastaNew>
+	git add <arquivoNew/PastaNew>
+	git commit -m "renomear..."
+	git push
+
 REMOVER PASTAS DO GIT 
 	git rm -r <FolderName> // This deletes from filesystem
 	git commit . -m "Remove duplicated directory"
