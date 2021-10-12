@@ -41,6 +41,12 @@ REMOVER PASTAS DO GIT MAS MANTER NO FILE SYSTEM
 FAZER PULL E PUSH
 	git checkout <sua-branch> && git pull origin <sua-branch>
 
+ALTERAR AUTENTICAÇÃO PARA SSH 
+	git remote set-url origin git@github.com:pedroquina/Publico.git
+ALTERAR AUTENTICAÇÃO PARA HTTPS
+        git remote set-url origin https://www.github.com/pedroquina/Publico.git
+
+
 Solução de erros :
 
 fatal: refusing to merge unrelated histories
