@@ -21,3 +21,8 @@ ffmpeg -i fileIN.mp4 -vf setpts=0.05*PTS -an fileOUT.mp4
   Um vídeo de 20 min para 1 min =  1 / 20 = 0.05 ( veja exemplo acima )
   Um vídeo de 9 horas para 3 min = 3 / ( 9*60) = 0.00555 : setpts=0.00555*PTS
 
+
+4 - Diminuir vídeo
+
+ffmpeg -i parte4.mov -vcodec libx264 -crf 20 parte4-convertido.mp4
+
