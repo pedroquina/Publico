@@ -27,6 +27,17 @@ RENOMEAR ARQUIVOS E PASTAS
 	git add <arquivoNew/PastaNew>
 	git commit -m "renomear..."
 	git push
+	
+REMOVER ARQUIVO DO GIT LOCAL 
+	git rm  <FileName> // This deletes from filesystem
+	git commit . -m "Remove file"
+	git push origin main 
+
+REMOVER ARQUIVO DO GIT REMOTO 
+	git rm --cache <FileName> // This deletes from repository
+	git commit . -m "Remove file"
+	git push origin main 
+
 
 REMOVER PASTAS DO GIT 
 	git rm -r <FolderName> // This deletes from filesystem
