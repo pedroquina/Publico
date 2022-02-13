@@ -10,6 +10,7 @@ Criando Repositório remoto e local com GitHub. Atualizado em 08/10/2021 20:30
 5. Adicione arquivos ou pastas para sincronizar com o repositório
 	git add <arquivo>
 	git add <pasta>
+	git add -A
 6. Adicione um comentário para a atualização 
 	git commit -m "comentário"
 7. Indique que esse é o "branch main"
@@ -17,10 +18,57 @@ Criando Repositório remoto e local com GitHub. Atualizado em 08/10/2021 20:30
 8. Vincule o repositório local com o repositório remoto
         git remote add origin https://github.com/pquina/Publico.git
 9. Sincronize os arquivos com o repositório remoto 
+    origin : nome do repositório remote
+    main   : nome da branch
 	git push -u origin main
 10. Sempre que incluir arquivos/pastas , seguir os passos 5 a 9 , com excessão do passo 8. 	
 11. Para atualizar o repositório local 
 	git pull
+
+CLONAR UM REPOSITÓRIO REMOTO
+	copiar a URL do repositório remoto
+	estar na pasta local onde a pasta do repositório remoto será criado
+	git clone <URL>
+	
+FORK : clonar um projeto de um repositório de terceiors no meu repositório
+       após isso posso clonar o repositório para um repositório local
+       fazer as alterações lo repositório local
+       fazer um push para meu repositório remoto
+       fazer um pull request para o repositório de origem
+
+CONSULTAR STATUS DO REPOSITÓRIO CORRENTE
+        git status
+
+CONSULTAR COMMITs REALIZADOS
+        git log
+	
+CONSULTAR BRANCHES ( lista todos )
+        git branch
+
+ADICIONA ARQUIVOS E COMITA
+        git commit -am "Alterações em ....."
+	
+CRIAR NOVO BRANCH
+        git branch <nome do novo branch>
+
+REMOVER BRANCH REMOTO (observe os 2 pontos)
+        git push origin :<nome do branch>
+
+REMOVER BRANCH LOCAL
+        git branch -D <nome do branch>
+
+ALTERAR O BRANCH
+        git checkout <nome do branch>
+
+CONSULTAR MODIFICAÇÕES NÃO COMITADAS
+        git diff  
+        git diff <nome arquivo>
+	
+CONSULTAR QUAIS ARQUIVOS FORAM MODIFICADOS
+        git diff --name-only
+
+RECUPERAR UM ARQUIVO JÁ COMITADO
+        git checkout HEAD -- <nome do arquivo>
 
 RENOMEAR ARQUIVOS E PASTAS
         git mv <arquivoOld/pastaOld> <arquivoNew/pastaNew>
@@ -49,14 +97,39 @@ REMOVER PASTAS DO GIT MAS MANTER NO FILE SYSTEM
 	git commit -m "Removed folder from repository"
 	git push origin main 
 
-FAZER PULL E PUSH
-	git checkout <sua-branch> && git pull origin <sua-branch>
+ATUALIZANDO REPOSITÓRIO LOCAL
+	git checkout <nome do branch>
+	git pull origin <nome do branch>
+
 
 ALTERAR AUTENTICAÇÃO PARA SSH 
 	git remote set-url origin git@github.com:pedroquina/Publico.git
 ALTERAR AUTENTICAÇÃO PARA HTTPS
         git remote set-url origin https://www.github.com/pedroquina/Publico.git
+	
+CONSULTAR O REPOSITÓRIO LOCAL ESTA NO SERVIDOR REMOTO
+        git remote
+	git remote -v
+	    (fetch) arquivos no repositório remoto
+	    (push) arquivos no repositório local
 
+RETORNAR VERSÃO
+	// desfaz última commit para a versão especificada,mantém arquivos no index para serem "comitadas"
+        git reset -soft aa0a1eef9375a8f67dc772ef24ac76403644665e
+	// desfaz último commit para aversão especificada e retira arquivos do index
+	git reset -mixed aa0a1eef9375a8f67dc772ef24ac76403644665e
+	// dezfaz útimo commit, reestabelecendo a estrutura de arquivos e pasta da versão especificada
+	git reset -hard aa0a1eef9375a8f67dc772ef24ac76403644665e
+
+REVERTER COMMIT
+        // retorna para uma versão salva, fazendo um novo commit, sempre perder ocommit já realizado
+        git revert --no-edit aa0a1eef9375a8f67dc772ef24ac76403644665e
+
+FAZER GIT IGNORAR ARQUIVOS E PASTAS DO CONTROLE
+	.gitignore
+	    <nome de arquivo>
+	    <*.txt>
+            <pasta/*>
 
 Solução de erros :
 
