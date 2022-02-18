@@ -11,6 +11,9 @@ Criando Repositório remoto e local com GitHub. Atualizado em 08/10/2021 20:30
 	git add <arquivo>
 	git add <pasta>
 	git add -A
+5.1 Cancelar "git add ..." antes do commit
+        git reset
+	
 6. Adicione um comentário para a atualização 
 	git commit -m "comentário"
 7. Indique que esse é o "branch main"
