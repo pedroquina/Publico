@@ -134,6 +134,9 @@ FAZER GIT IGNORAR ARQUIVOS E PASTAS DO CONTROLE
 	    <*.txt>
             <pasta/*>
 
+	PARA IGNORAR UM ARQUIVO QUE JÁ FOI INGRESSADO 
+		git rm --cached FILENAME
+
 Solução de erros :
 
 fatal: refusing to merge unrelated histories
