@@ -1,0 +1,77 @@
+Iniciar git flow após o clone
+- git flow init -d
+
+- git push origin master
+
+##### FEATURE
+
+Criar uma nova FEATURE
+- git checkout develop
+- git pull origin develop
+
+- git flow feature start <nome-da-feature> 
+
+
+Adicionar arquivo no repositório local
+- git add .
+
+Consultar status do repositório
+- git status
+
+Commit para repositório local
+- git commit -m "descrição da atividade"
+
+Atualizar repositório remoto
+- git flow publish <nome-da-feature>
+
+Finalizar uma FEATURE
+- git flow feature finish <nomde-da-feature>
+
+##### RELEASE   candidatas a produção
+
+Alterar para a branch develop
+- git branch develop
+- git pull origin develop
+
+Criar nova release
+- git flow release start <1.0.0.0>
+- git branch
+
+Atualizar repositório remoto
+- git flow release publish <1.0.0.0>
+
+Finalizar uma release
+- git flow release finish <1.0.0.0> -m "<nome-tag>"
+- git checkout master
+- git push origin master
+- Inserir a tag no repositório master
+--- git push origin <1.0.0.0>
+
+Atualizar develop
+-- git checkout develop
+-- git push origin develop
+
+
+##### Hotfix
+
+- git checkout master
+- git push origin master
+- git flow hotfix start <1.0.0.1>
+- git branch
+
+Atualizar repositório local
+- git add .
+- git status
+- git commit -m "<correção de bug>"
+
+Atualizar repositório remoto
+- git flow hotfix publish <1.0.0.1>
+
+
+- Finalizar hotfix
+- git flow hotfix finish <1.0.0.1> -m "<nome-da-tag>"
+- git checkout master
+- git push origin master
+- git push origin <1.0.0.1>
+- git checkout develop
+- git push origin develop
