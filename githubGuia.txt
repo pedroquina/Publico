@@ -28,6 +28,10 @@ Criando Repositório remoto e local com GitHub. Atualizado em 08/10/2021 20:30
 11. Para atualizar o repositório local 
 	git pull
 
+12. Alterar repositório remoto
+        git remote -v
+	git remote set-url origin <url do novo repositório>
+
 CLONAR UM REPOSITÓRIO REMOTO
 	copiar a URL do repositório remoto
 	estar na pasta local onde a pasta do repositório remoto será criado
