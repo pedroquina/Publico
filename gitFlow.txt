@@ -28,7 +28,7 @@ Finalizar uma FEATURE
 - git flow feature finish <nomde-da-feature>
 
 Atualizar repositório remoto
-- git push
+- git push origin develop
 
 ##### RELEASE   candidatas a produção
 
