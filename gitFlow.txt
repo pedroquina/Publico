@@ -22,7 +22,7 @@ Commit para repositório local
 - git commit -m "descrição da atividade"
 
 Atualizar repositório remoto
-- git flow publish <nome-da-feature>
+- git flow feature publish <nome-da-feature>
 
 Finalizar uma FEATURE
 - git flow feature finish <nomde-da-feature>
