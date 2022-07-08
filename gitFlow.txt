@@ -21,7 +21,7 @@ Consultar status do repositório
 Commit para repositório local
 - git commit -m "descrição da atividade"
 
-Atualizar repositório remoto
+Publicar FEATURE no repositório remoto
 - git flow feature publish <nome-da-feature>
 
 Finalizar uma FEATURE
